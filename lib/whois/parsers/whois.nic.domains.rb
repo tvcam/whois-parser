@@ -7,7 +7,7 @@
 #++
 
 
-require_relative 'base_whoisd'
+require_relative 'base_verisign'
 
 
 module Whois
