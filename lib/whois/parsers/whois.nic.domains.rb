@@ -19,6 +19,7 @@ module Whois
     #   The Example parser for the list of all available methods.
     #
     class WhoisNicDomains < BaseVerisign
+      self.scanner = Scanners::BaseIcannCompliant
     end
   end
 end
