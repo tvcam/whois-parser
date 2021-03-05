@@ -8,7 +8,7 @@
 
 
 require_relative 'base_verisign'
-
+require 'whois/scanners/base_icann_compliant'
 
 module Whois
   class Parsers
