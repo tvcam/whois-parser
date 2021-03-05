@@ -6,13 +6,15 @@ module Whois
     class Verisign < Base
 
       self.tokenizers += [
-          :skip_head,
-          :scan_available,
-          :scan_throttled,
           :skip_empty_line,
-          :skip_blank_line,
-          :scan_keyvalue,
-          :skip_end,
+          :scan_response_unavailable,
+          :scan_available,
+          :scan_disclaimer,
+          :scan_notice,
+          :scan_keyvalue_indented,
+          :skip_ianaservice,
+          :skip_lastupdate,
+          :skip_fuffa,
       ]
 
 
